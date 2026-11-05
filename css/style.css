@@ -52,6 +52,19 @@ body {
     color: #0078d4;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #005a9e;
+}
+
 /* コンテンツ */
 main {
     max-width: 1100px;
