@@ -1,0 +1,74 @@
+/* 基本設定 */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* メニューバー */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ロゴ */
+.site-logo {
+    color: #222;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ナビ */
+.site-nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* リンク */
+.site-nav a {
+    color: #444;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+/* ホバー */
+.site-nav a:hover {
+    color: #0078d4;
+}
+
+/* コンテンツ */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* スマートフォンにも対応 */
+@media (max-width: 600px) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
