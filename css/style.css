@@ -9,7 +9,9 @@ body {
     color: #333;
 }
 
+
 /* メニューバー */
+
 .site-header {
     display: flex;
     align-items: center;
@@ -25,6 +27,7 @@ body {
     z-index: 1000;
 }
 
+
 /* ロゴ */
 .site-logo {
     color: #222;
@@ -33,11 +36,13 @@ body {
     text-decoration: none;
 }
 
+
 /* ナビ */
 .site-nav {
     display: flex;
     gap: 25px;
 }
+
 
 /* リンク */
 .site-nav a {
@@ -47,17 +52,22 @@ body {
     transition: color 0.2s;
 }
 
+
 /* ホバー */
 .site-nav a:hover {
     color: #0078d4;
 }
 
+
 /* コンテンツ */
+
 main {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 24px;
 }
+
+
 .media-box {
     display: flex;
     align-items: center;
@@ -66,14 +76,18 @@ main {
     padding: 16px;
 }
 
+
 /* 画像 */
 .media-image {
     width: 120px;
     height: 120px;
+
     object-fit: contain;
     border-radius: 10px;
+
     flex-shrink: 0;
 }
+
 
 /* 文章 */
 .media-content {
@@ -89,7 +103,17 @@ main {
     margin-bottom: 0;
 }
 
-/* スマートフォンにも対応させる */
+
+/* リストの点を消去 */
+.media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* スマホ対応 */
+
 @media (max-width: 480px) {
     .media-box {
         flex-direction: column;
@@ -102,7 +126,8 @@ main {
     }
 }
 
-/* スマートフォンにも対応 */
+
+/* スマフォ対応 */
 @media (max-width: 600px) {
     .site-header {
         align-items: flex-start;
